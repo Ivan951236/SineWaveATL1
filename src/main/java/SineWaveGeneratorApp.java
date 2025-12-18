@@ -27,9 +27,9 @@ public class SineWaveGeneratorApp extends JFrame {
     public SineWaveGeneratorApp() {
         audioGenerator = new AudioGenerator();
         initializeComponents();
+        setupMenuBar();  // Move menu bar setup before event handlers
         setupLayout();
         setupEventHandlers();
-        setupMenuBar();
 
         setTitle("Sine Wave Generator");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
